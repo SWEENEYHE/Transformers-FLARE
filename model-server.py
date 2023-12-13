@@ -4,7 +4,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 import uvicorn
 from fastapi import FastAPI
 
-MODEL_PATH = "/home/ubuntu/work/Baichuan2-13B-Chat"
+MODEL_PATH = "Baichuan2-13B-Chat"
 
 tokenizer = AutoTokenizer.from_pretrained(MODEL_PATH, trust_remote_code=True)
 model = AutoModelForCausalLM.from_pretrained(MODEL_PATH, device_map="auto", trust_remote_code=True)
