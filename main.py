@@ -104,7 +104,7 @@ class MyResponseLLM(BaseLLM):
 
 
 if __name__ == "__main__":
-    url = "http:xxx.xxx.xxx.xxx:9090"
+    url = "http:xxx.xxx.xxx.xxx:9090/queries_chat"
     myLLM = MyResponseLLM(url = url)
 
     flare = FlareChain.from_llm(
